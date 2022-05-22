@@ -1,0 +1,30 @@
+{
+	"type": "module",
+	"name": "social-media",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hitesharma/social-media.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hitesharma/social-media/issues"
+	},
+	"homepage": "https://github.com/hitesharma/social-media#readme",
+	"dependencies": {
+		"apollo-server": "^3.7.0",
+		"dotenv": "^16.0.1",
+		"graphql": "^16.5.0",
+		"mongoose": "^6.3.4"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	}
+}
