@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import registerResolver from './register.js';
+import registerResolver from './auth.js';
 
 const resolvers = _.merge(registerResolver);
 export { resolvers };

@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server';
 
-const typeDefs = gql`
+export default gql`
 	type User {
 		_id: ID
 		name: String
@@ -20,7 +20,7 @@ const typeDefs = gql`
 	}
 
 	type Query {
-		hello: Boolean
+		login(username: String!, password: String!): String
 	}
 
 	type Mutation {
@@ -38,5 +38,3 @@ const typeDefs = gql`
 		): Boolean
 	}
 `;
-
-export { typeDefs };
