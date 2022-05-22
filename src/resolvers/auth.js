@@ -20,6 +20,10 @@ export default {
 			let token = jwt.sign({ user: args.username }, config.jwtKey);
 			return token;
 		},
+
+		hello: (parent, args, context, info) => {
+			if (!context.user) throw new Error('Unauthorised');
+		},
 	},
 	Mutation: {
 		register: async (parent, args, context, info) => {
