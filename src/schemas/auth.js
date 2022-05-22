@@ -21,6 +21,7 @@ export default gql`
 
 	type Query {
 		login(username: String!, password: String!): String
+		hello: Boolean
 	}
 
 	type Mutation {
